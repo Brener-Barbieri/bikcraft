@@ -125,10 +125,12 @@ header{
   color: gray;
   font-size: 1.3rem;
   padding-top: 16px;
+  margin-bottom: 92px;
 }
 
 .model{
   background-color: black;
+  box-shadow: inset 0 68px white ,inset 0 -68px white;
 }
 
 .model .columns{
@@ -136,3 +138,123 @@ header{
   grid-template-columns: 1fr 1fr;
 }
 
+.model .title{
+  margin-top: 140px;
+  font-size: 2rem;
+  color: gray;
+}
+
+.model .subtitle{
+  margin-top: 24px;
+}
+
+.model .text{
+  color: gray;
+  font-size: 1.3rem;
+  margin-top: 24px;
+}
+
+.model .link{
+  color: rgb(255, 183, 0);
+  margin-top: 24px;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.model .image{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.model .list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.model .list .item{
+  font-size: 0.75rem;
+}
+
+.model .list .item+.item{
+  margin-right: 24px;
+}
+
+
+
+.model .list .title{
+  color: white;
+  margin-top: 0px;
+}
+
+.model .list .text{
+  color: grey;
+}
+
+.partners .subtitle{
+  color: black;
+  margin-top: 32px;
+  margin-left: 24px;
+  margin-bottom: 60px;
+}
+
+.partners .columns{
+  margin-left: 24px;
+  display:grid ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 80px;
+
+}
+
+.partners .columns .item{
+  /* border: solid 1px gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+}
+ 
+.partners .columns .item+.item{
+  border-left: solid 1px gray;
+  
+}
+
+.partners .columns .item+.item:nth-child(5){
+  border-left: none;
+}
+.partners .columns .item+.item:nth-child(n+5){
+  border-top:  solid 1px gray;
+}
+
+.testmonion{
+  background-color:rgb(255, 183, 0) ;
+}
+
+.testmonion .columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.testmonion .image{
+  width: 100%;
+  height: 100%;
+}
+
+.testmonion .item{
+  
+  align-self: self-end;
+}
+
+.testmonion .item .text{
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  padding: 40px 80px;
+}
+
+.testmonion .item .name{
+  font-size: 1.5rem;
+  padding: 12px 80px 100px 80px;
+}
