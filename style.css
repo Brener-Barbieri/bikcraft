@@ -35,6 +35,16 @@ header{
   border-radius: 4px;
 }
 
+.button.-primary{
+  background-color:rgb(81, 81, 81) ;
+  padding: 12px 16px;
+  color: black;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-top: 32px;
+  border-radius: 4px;
+}
+
 .container{
   max-width: 1170px;
   margin-left: auto;
@@ -95,12 +105,12 @@ header{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+  border-radius: 4px;
 }
 
 .store .subtitle{
   color: black;
-  margin-left: 24px;
+  margin-left: 132px;
 }
 
 .store .column{
@@ -196,7 +206,7 @@ header{
 .partners .subtitle{
   color: black;
   margin-top: 32px;
-  margin-left: 24px;
+  margin-left: 132px;
   margin-bottom: 60px;
 }
 
@@ -209,7 +219,6 @@ header{
 }
 
 .partners .columns .item{
-  /* border: solid 1px gray; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,4 +266,120 @@ header{
 .testmonion .item .name{
   font-size: 1.5rem;
   padding: 12px 80px 100px 80px;
+}
+
+.safe{
+  background-color: rgba(27, 27, 27, 0.942);
+}
+
+.safe .subtitle{
+ padding-top:32px ;
+ margin-bottom: 40px;
+}
+
+.safe .columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.safe .column{
+  background: black;
+  color: white;
+  padding: 32px 32px 32px 60px;
+  border-radius: 4px;
+  margin-bottom: 64px;
+}
+
+.safe .column .title{
+  color: gray;
+  font-size: 2rem;
+}
+
+.safe .column .title.-primary{
+  color: rgb(255, 183, 0) ;
+  font-size: 2rem;
+}
+
+.safe .column .list .item{
+  font-size: 1.2rem;
+  margin-top: 16px;
+}
+
+.safe .header {
+  display: flex;
+}
+
+.safe .price{
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.safe .price .text{
+  font-size: 1rem;
+  align-self: flex-end;
+  display: flex;
+  color: gray;
+}
+
+
+.footer{
+  background-color: black;
+}
+
+.footer .columns{
+  padding-top: 80px;
+  color: white;
+  display: grid;
+  grid-template-columns: 180px 1fr 1fr;
+  gap: 120px;
+}
+
+/* .footer .container .image{
+  display: flex;
+  justify-content: flex-start;
+} */
+
+
+.footer .list .title{
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.footer .list .item{
+  font-size: 1.2rem;
+  color: gray;
+  margin-top: 16px;
+}
+
+.footer .list .item.-contact:nth-child(odd)::after{
+  content: "";
+  display: block;
+  max-width: 360px;
+  height: 2px;
+  background-color: gray;
+  margin-top: 16px
+}
+
+
+.footer .list .item .link{
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.footer .social{
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.footer .bike{
+  color: white;
+}
+
+.footer .descriptions{
+  color: gray;
+  padding: 64px 0;
 }
