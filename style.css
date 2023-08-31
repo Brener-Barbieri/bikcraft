@@ -383,3 +383,27 @@ header{
   color: gray;
   padding: 64px 0;
 }
+
+.bicycle-page{
+  background-color:rgba(27, 27, 27, 0.942) ;
+}
+
+.bicycle-page .title{
+  color: gray;
+  padding-top: 48px;
+}
+
+.bicycle-page .subtitle{
+  padding-bottom: 48px;
+  font-size: 4rem;
+  margin-top: 8px;
+}
+
+.portfolio .columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.portfolio .columns .image{
+  width: 100%;
+}
